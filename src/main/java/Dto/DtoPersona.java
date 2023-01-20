@@ -11,6 +11,8 @@ public class DtoPersona {
     @NotBlank
     private String img;
     @NotBlank
+    private String banner;
+    @NotBlank
     private String about;
     @NotBlank
     private String facebook;
@@ -26,10 +28,11 @@ public class DtoPersona {
     public DtoPersona() {
     }
 
-    public DtoPersona(String nombre, String apellido, String img, String about, String facebook, String instangram, String linkedin, String github, String twitter) {
+    public DtoPersona(String nombre, String apellido, String img, String banner, String about, String facebook, String instangram, String linkedin, String github, String twitter) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.img = img;
+        this.banner = banner;
         this.about = about;
         this.facebook = facebook;
         this.instangram = instangram;
@@ -60,6 +63,14 @@ public class DtoPersona {
 
     public void setImg(String img) {
         this.img = img;
+    }
+    
+    public String getBanner() {
+        return banner;
+    }
+    
+    public void setBanner(String banner) {
+        this.banner = banner;
     }
 
     public String getAbout() {

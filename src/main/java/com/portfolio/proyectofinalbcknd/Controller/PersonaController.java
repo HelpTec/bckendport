@@ -57,6 +57,7 @@ public class PersonaController {
         pers.setNombre(dtopers.getNombre());
         pers.setApellido(dtopers.getApellido());
         pers.setImg(dtopers.getImg());
+        pers.setBanner(dtopers.getBanner());
         pers.setAbout(dtopers.getAbout());
         pers.setFacebook(dtopers.getFacebook());
         pers.setInstangram(dtopers.getInstangram());

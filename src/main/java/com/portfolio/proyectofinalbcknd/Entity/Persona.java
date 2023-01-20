@@ -20,10 +20,12 @@ public class Persona {
     @NotNull
     @Size(min = 1, max = 50, message = "Introduzca Valor entre 1 y 50 caracteres")
     private String Apellido;
-    @Size(min = 1, max = 150, message = "Introduzca texto entre 1 y 50 caracteres")
+    @Size(min = 1, max = 1000, message = "Introduzca texto entre 1 y 1000 caracteres")
     private String img;
     @Size(min = 1, max = 1000, message = "Introduzca texto entre 1 y 1000 caracteres")
-    private String about;
+    private String banner;
+    @Size(min = 1, max = 1000, message = "Introduzca texto entre 1 y 1000 caracteres")
+        private String about;
     @Size(min = 1, max = 150, message = "Introduzca texto entre 1 y 50 caracteres")
     private String facebook;
     @Size(min = 1, max = 150, message = "Introduzca texto entre 1 y 50 caracteres")
@@ -65,6 +67,14 @@ public class Persona {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    public String getBanner() {
+        return banner;
+    }
+
+    public void setBanner(String banner) {
+        this.banner = banner;
     }
 
     public String getAbout() {
